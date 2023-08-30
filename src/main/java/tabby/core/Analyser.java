@@ -33,6 +33,7 @@ import static soot.SootClass.HIERARCHY;
 @Component
 public class Analyser {
 
+    // lyf: 这里的container和scanner想表达的是什么意思？
     @Autowired
     private DataContainer dataContainer;
     @Autowired
@@ -42,6 +43,7 @@ public class Analyser {
 
     @Autowired
     private RulesContainer rulesContainer;
+    // lyf: 该对象就是去获取文件，应该写为工具类，提供静态方法
     @Autowired
     private FileCollector fileCollector;
 
